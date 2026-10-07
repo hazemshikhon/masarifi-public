@@ -17,6 +17,7 @@
   <h2>1. Bank SMS messages</h2>
   <ul>
     <li><strong>Android:</strong> with your permission (RECEIVE_SMS), the app receives incoming SMS on your phone. It keeps only messages that look like money (an amount with a currency) or that come from a sender you added as a source. Every other message is discarded immediately and never stored.</li>
+    <li><strong>Android, past messages (optional):</strong> if you choose "Import past bank messages" at setup (1, 3 or 12 months), the app reads the SMS already on your phone for that period (READ_SMS) and keeps only the ones that pass the same filter. Personal messages are skipped and never stored.</li>
     <li><strong>iPhone:</strong> iOS does not let apps read SMS. Messages reach the app only through a Shortcuts automation that you create yourself; the same filtering applies.</li>
     <li>Kept messages are read <strong>on your phone</strong>: by message formats built into the app and, when your phone supports it, by the phone's own on-device AI (Apple Intelligence on iPhone). No message is sent to us or to any AI service on the internet.</li>
     <li>Senders you mark as "Not a source" are ignored from then on, and their stored messages are deleted.</li>
@@ -62,6 +63,7 @@
   <h2>1. رسايل البنك</h2>
   <ul>
     <li><strong>أندرويد:</strong> بإذنك (RECEIVE_SMS) التطبيق بيستقبل الرسايل اللي بتوصل لموبايلك. بيحتفظ بس بالرسايل اللي شكلها فلوس (مبلغ وعملة) أو اللي من مرسل إنت ضفته كمصدر. أي رسالة تانية بتترمي على طول ومش بتتحفظ.</li>
+    <li><strong>أندرويد، الرسايل القديمة (اختياري):</strong> لو اخترت «استورد رسايل البنك القديمة» وقت الإعداد (شهر أو 3 أو 12 شهر)، التطبيق بيقرا الرسايل اللي على موبايلك في الفترة دي (READ_SMS) وبيحتفظ بس باللي بتعدّي نفس الفرز. الرسايل الشخصية بتتخطى ومش بتتحفظ.</li>
     <li><strong>آيفون:</strong> نظام iOS مش بيسمح للتطبيقات تقرا الرسايل. الرسايل بتوصل للتطبيق بس عن طريق أتمتة في تطبيق «الاختصارات» إنت اللي بتعملها، وبنفس طريقة الفرز.</li>
     <li>الرسايل اللي بتتحفظ بتتقري <strong>على موبايلك</strong>: بأشكال رسايل موجودة في التطبيق، ولو موبايلك بيدعم، بالذكاء الاصطناعي اللي على الجهاز نفسه (Apple Intelligence على الآيفون). مفيش ولا رسالة بتتبعت لينا ولا لأي خدمة ذكاء اصطناعي على الإنترنت.</li>
     <li>المرسلين اللي بتختار إنهم «مش مصدر» بيتجاهلوا من ساعتها، ورسايلهم المحفوظة بتتمسح.</li>
